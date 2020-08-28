@@ -1,0 +1,100 @@
+body
+{
+	background-image: url('Cab-image.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top:20px;
+	padding-left: 350px;
+}
+.login-form
+{   
+	width: 700px;
+	height: 600px;
+	background-image: url('blue-login.jpg');
+	box-shadow: -10px -10px 50px 20px black, 10px 10px 50px 20px black;
+	border-radius:10px;
+	padding-left:50px;
+}
+h2 {
+	padding-top: 20px;
+	text-align: center;
+	padding-bottom:10px;
+	font-family:sans-sherif;
+	color:white;
+	font-weight: bold;
+	font-size:30px
+}
+.predict-button{
+	padding: 10px 25px 10px 25px;	
+	border-radius: 30px;
+	font-size: 20px;
+	font-weight: 650;
+	text-align:center;
+	font-family: sans-sherif;
+	margin-bottom: -10px;
+}
+.button-adjust{
+	text-align:center;
+	padding-top:20px;
+}
+.field{
+    background-image: url('blue-inner.jpg');
+	height:250px;
+	width: 600px;
+	border-radius:10px;
+	padding-top: 20px;
+	padding-right: 40px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.text-field{
+	float:left; 
+	width:50%;   
+}
+.input-field{
+    float:right; 
+	width:50%; 
+}
+input{
+	margin-bottom:7.5px;
+	text-align: center;
+	font-size: 20px;
+	}
+select{
+	font-size:20px;
+	width:200px;
+	margin-bottom:10px;
+	text-align:center;
+}
+p {
+	color: black;
+	font-weight: 600;
+	font-family: sans-sherif;
+	font-size: 18px;
+}
+.prediction-text{
+	background-image: url('blue-inner.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 5px;
+	width: 600px;
+	height: 130px;
+	margin-top: -75px;
+	padding-top: 5px;
+	padding-left: 20px;
+    padding-right: 10px;	
+}
+.text-text {
+	float: left;
+	padding-top:10px;
+}
+.text-val {
+	float: right;
+	background-color: white;
+	height:28px;
+	width: 180px;
+	text-align: center;
+}
+.text-val-parent{
+	padding-bottom:2.5px;
+}
