@@ -35,6 +35,7 @@ def predict():
         except Exception as _:
             val = weekday_month_val[x]
             features.append(val)
+            continue
     
     features.append(2011)
     final_features = [np.array(features)]
