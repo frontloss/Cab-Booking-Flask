@@ -30,8 +30,8 @@ def predict():
     features = []
     for x in request.form.values():
         try:
-            float_val = float(x)
-            features.append(float_val)
+            int_val = int(x)
+            features.append(int_val)
         except Exception as _:
             val = weekday_month_val[x]
             features.append(val)
