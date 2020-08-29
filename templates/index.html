@@ -3,8 +3,8 @@
        <title>Cab Booking Predictor</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
-        <script src="{{ url_for('static',filename='styles/script.js') }}"></script>
-		<link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}">		
+        <script src="{{ url_for('static',filename='styles/script_cab.js') }}"></script>
+		<link rel="stylesheet" href="{{ url_for('static',filename='styles/style_cab.css') }}">		
     </head>
     <body>
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,16 +21,16 @@
 					<p>WeekDay: </p>
 				</div> 
 				<div class="input-field">
-				    <select name="Hour" required="required" id="Hour" onclick="populateSelect(0,23,'Hour'); this.onclick=null;">
+				    <select name="Hour" required="required" id="Hour" onmousedown="populateSelect(0,23,'Hour'); this.onmousedown=null;">
 						<option value="" disabled selected>Select Hour</option>
 					</select>
-					<select name="Month" required="required" id="Month" onclick="populateMonth('Month'); this.onclick=null;">
+					<select name="Month" required="required" id="Month" onmousedown="populateMonth('Month'); this.onmousedown=null;">
 						<option value="" disabled selected>Select Month</option>
 					</select>
 					<input name="temp" placeholder="in Celsius" required="required" />
 					<input name="humidity" placeholder="in %" required="required" />
 					<input name="windspeed" placeholder="in km/h" required="required"/>
-                    <select name="WeekDay" required="required" id="WeekDay" onclick="populateWeekDay('WeekDay'); this.onclick=null;">
+                    <select name="WeekDay" required="required" id="WeekDay" onmousedown="populateWeekDay('WeekDay'); this.onmousedown=null;">
 						<option value="" disabled selected>Select WeekDay</option>
 					</select>					
 				</div>
