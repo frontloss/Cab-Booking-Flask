@@ -21,22 +21,18 @@ def predict():
     For rendering results on HTML GUI
     '''
     def weekday_month_val(val):
+        result = val
         comb_dict = {'Monday':0,'Tuesday':1,'Wednesday':2,'Thursday':3,
                      'Friday':4,'Saturday':5,'Sunday':6,
                      'January':1,'February':2,'March':3,'April':4,'May':5,
                      'June':6,'July':7,'August':8,'September':9,
                      'October':10,'November':11,'December':12}
-        return comb_dict[val]
-    features = []
-    for x in request.form.values():
-        try:
-            int_val = int(x)
-            features.append(int_val)
-        except Exception as _:
-            val = weekday_month_val[x]
-            features.append(val)
-            continue
-    
+        if val in comb_dict:
+            result = comb_dict[val]
+        else:
+            result = float(result)
+        return result
+    features = [weekday_month_val(x) for x in request.form.values()]    
     features.append(2011)
     final_features = [np.array(features)]
     prediction = model.predict(final_features)
